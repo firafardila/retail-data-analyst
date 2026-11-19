@@ -1,0 +1,12 @@
+SELECT * FROM Customer_Data_Clean.csv LIMIT 10; 
+SELECT * FROM Order_Data_Clean.csv LIMIT 10;
+SELECT COUNT(*) AS Total_Order from Order_Data_Clean.csv;
+SELECT COUNT(*) AS Total_Order FROM Order_Data_Clean.csv;
+SELECT MIN(Order_Date) AS first_order, MAX(Order_Date) AS last_order FROM Order_Data_Clean.csv;
+SELECT DISTINCT Category FROM Order_Data_Clean.csv; 
+SELECT COUNT(DISTINCT Category) AS total_category FROM Order_Data_Clean.csv;
+SELECT DISTINCT Sub_Category FROM Order_Data_Clean.csv;
+SELECT COUNT(DISTINCT Sub_Category) AS total_sub_category FROM Order_Data_Clean.csv;
+SELECT COUNT(DISTINCT Location) AS total_location FROM Customer_Data_Clean.csv;
+SELECT DISTINCT Location FROM Customer_Data_Clean.csv;
+SELECT DISTINCT Payment_Method FROM Customer_Data_Clean.csv; 
